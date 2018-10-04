@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txtView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtItem"
+        android:layout_width="361dp"
+        android:layout_height="51dp"
+        android:layout_weight="40"
+        android:fontFamily="cursive"
+        android:text="Item"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="38dp" />
+
+    <TextView
+        android:id="@+id/creationDate"
+        android:layout_width="100dp"
+        android:layout_height="39dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtItem"
+        android:layout_marginStart="68dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/lastUpDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtItem" />
+
+    <TextView
+        android:id="@+id/lastUpDate"
+        android:layout_width="108dp"
+        android:layout_height="39dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/txtItem"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/creationDate"
+        app:layout_constraintTop_toBottomOf="@+id/txtItem" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="67dp"
+        android:layout_height="39dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtItem"
+        android:text="Created \n On"
+        android:textAlignment="viewStart"
+        android:textColor="@color/colorAccent"
+        android:textSize="12dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="88dp" />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="39dp"
+        android:layout_below="@+id/txtItem"
+        android:layout_toEndOf="@+id/creationDate"
+        android:text="Modified \n On"
+        android:textAlignment="viewStart"
+        android:textColor="@color/colorAccent"
+        android:textSize="12dp"
+        tools:layout_editor_absoluteX="173dp"
+        tools:layout_editor_absoluteY="88dp" />
+
+</RelativeLayout>
